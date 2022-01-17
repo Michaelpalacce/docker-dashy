@@ -1,4 +1,4 @@
-VERSION=$(curl -s -XGET https://api.github.com/repos/Michaelpalacce/Server/tags | grep name -m 1 | awk '{print $2}' | cut -d'"' -f2)
+VERSION=$(curl -s -XGET https://api.github.com/repos/Lissy93/dashy/tags | grep name -m 1 | awk '{print $2}' | cut -d'"' -f2)
 
 docker buildx build --platform linux/amd64,linux/arm64 \
 -f Dockerfile \
